@@ -1,0 +1,101 @@
+.close-icon {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    fill: #C7C7C7;
+}
+
+.close-item {
+    position: static;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.header-section-login .logo-icon {
+    width: 207px;
+    height: 43px;
+}
+
+.header-section-recovery .logo-icon {
+    width: 148.8px;
+    height: 31px;
+}
+
+.sms-icon {
+    width: 153px;
+    height: 153px;
+    margin-bottom: 3em;
+}
+
+.logo-icon-small {
+    width: 96px;
+    height: 20px;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.shopping-cart {
+    width: 25px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.search-icon {
+    left: 12px;
+}
+
+.add_to_card {
+    width: 40px;
+    height: 40px;
+    margin-top: .2em;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.noshop-icon {
+    width: 50%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.normal--size {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.search-home-icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 12px;
+}
+
+.clean-search {
+    right: 12px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.not-found-icon {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+.arrow-down-icon {
+    color: #cacaca;
+}

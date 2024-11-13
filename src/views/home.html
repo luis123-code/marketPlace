@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketShop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/icon-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="../data/user.js"></script>
+    <script src="../data/products.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body id="body-home">
+    <div id="js-menu-tab" class="menu-tab">
+        <img onclick="hideMenu()" class="close-icon" src="../assets/icons/x-icon.svg" alt="close icon">
+        <div>
+            <h2 class="menu-tab__tittle">CATEGORIES</h2>
+            <ul class="menu-tab__main-list">
+                <li onclick="changeFilterSinceNav('all')" class="menu-tab__main-list__item">All</li>
+                <li onclick="changeFilterSinceNav('clothes')" class="menu-tab__main-list__item">Clothes</li>
+                <li onclick="changeFilterSinceNav('electronics')" class="menu-tab__main-list__item">Electronics</li>
+                <li onclick="changeFilterSinceNav('furnitures')" class="menu-tab__main-list__item">Furnitures</li>
+                <li onclick="changeFilterSinceNav('toys')" class="menu-tab__main-list__item">Toys</li>
+                <li onclick="changeFilterSinceNav('others')" class="menu-tab__main-list__item">Others</li>
+            </ul>
+            <ul class="menu-tab__logged">
+                <li class="menu-tab__logged__item"><a class="style-no-link" href="./my-orders.html">My orders</a></li>
+                <li class="menu-tab__logged__item"><a class="style-no-link" href="./my-account.html">My account</a></li>
+            </ul>
+        </div>
+        <div>
+            <span class="menu-tab__email">stivenb1994@gmail.com</span>
+            <a href="../" class="menu-tab__loggin">Sign out</a>
+        </div>
+    </div>
+    <div id="js-product-detail" class="product-detail-tab">
+        <div class="">
+            <div id="js-detail-img" class="new-img product-detail-img">
+                <div class="wrapper-close-btn"></div>
+                <img onclick="hideProductDetail()" class="close-icon" src="../assets/icons/x-icon.svg" alt="close icon">
+                <div class="points-wrapper">
+                    <div class="point selected-point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+            
+            <div class="product-detail-info">
+                <span id="js-detail-price" class="price-product">loading...</span>
+                <h3 id="js-detail-tittle" class="recovery-text">loading...</h3>
+                <p id="js-detail-descrip" class="recovery-text">loading...</p>
+            </div>
+        </div>
+        <div class="product-detail-buttom">
+            <button data-product="" id="js-detail-btn" onclick="addToShopp(this)" class="general-button green--btn">
+                <img class="normal--size" src="../assets/icons/shopping-icon.svg" alt="image of shopping car">
+                <span id="js-detail-btn-text" class="product-detail-buttom__text">Add to cart</span>
+            </button>
+        </div>
+    </div>
+    <div id="js-shopping-card-tab" class="shopping-card-tab">
+        <div id="js-shopping-container-items" class="shopping-card-top"></div> <!-- section where insert the items -->
+        <div class="shopping-card-bottom">
+            <div class="shopping-card-total">
+                <span class="login-section__label shopping-card-total__text">Total</span>
+                <span id="js-shopping-total" class="price-product shopping-card-total__price">$ 0.00</span>
+            </div>
+            <button id="checkout-btn" class="general-button green--btn">
+                Checkout
+            </button>
+        </div>
+    </div>
+    <header class="header-home-section">
+        <nav class="nav-section">
+            <div class="header-home-nav">
+                <img class="menu-icon" onclick="showMenu()" src="../assets/icons/menu-icon.svg" alt="menu icon">
+                <div id="js-left-nav" class="left-nav">
+                    <img id="js-link-logo" class="logo-icon-small" src="../assets/icons/logo.svg" alt="logo of the webpage">
+                    <ul id="home-nav-desk" class="header-home-section__list hide-section">
+                        <li id="js-all-desk" onclick="handleHomeList(this)" class="header-home-section__list-option selected-item-desk">All</li>
+                        <li id="js-clothes-desk" onclick="handleHomeList(this)" class="header-home-section__list-option">Clothes</li>
+                        <li id="js-electronics-desk" onclick="handleHomeList(this)" class="header-home-section__list-option">Electronics</li>
+                        <li id="js-furnitures-desk" onclick="handleHomeList(this)" class="header-home-section__list-option">Furnitures</li>
+                        <li id="js-toys-desk" onclick="handleHomeList(this)" class="header-home-section__list-option">Toys</li>
+                        <li id="js-others-desk" onclick="handleHomeList(this)" class="header-home-section__list-option">Others</li>
+                    </ul>
+                </div>
+                <h2 id="js-tittle-logo" class="hide-logo">Shopping cart</h2>
+                <div class="right-nav">
+                    <div class="email-menu">
+                        <div onclick="handleMenuNav()" class="email-menu__front">
+                            <span class="email-menu__text"><!-- Loading... -->stivenb1994@gmail.com</span>
+                            <img class="arrow-down-icon" src="../assets/icons/arrow-down.svg" alt="arrow down image">
+                        </div>
+                        <div id="js-menu-nav" class="email-menu__list">
+                            <ul class="email-list-ul">
+                                <li class="email-list-ul__item"><a class="style-no-link" href="./my-orders.html">My orders</a></li>
+                                <li class="email-list-ul__item"><a class="style-no-link" href="./my-account.html">My account</a></li>
+                                <a href="../index.html" class="email-list-ul__item menu-tab__loggin">Sign out</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="js-counter-circle" class="counter-circle">0</div>
+                    <img class="shopping-cart" onclick="showShoppingCard()" src="../assets/icons/shopping-cart.svg" alt="icon of a shopping cart">
+                </div>
+            </div>
+        </nav>
+        <div class="search-wrapper">
+            <div class="general-input center-search search-home-section">
+                <img class="search-home-icon search-icon" src="../assets/icons/search-icon.svg" alt="search icon">
+                <input id="search-input" onkeyup="searchHandler(event)" class="header-home-section__search" type="text" placeholder="Search product">
+                <img id="js-clean-search" onclick="cleanSearchInput()" class="search-home-icon clean-search" src="../assets/icons/x-icon.svg" alt="close icon">
+            </div>
+            <span class="header-home-section__text hide-section">Order:</span> 
+            <select class="header-home-section__order hide-section">
+                <option selected value="mostRecent">Most recent</option>
+                <option value="mostBought">Most popular</option>
+                <option value="ascendentOrder">Ascendent order</option>
+            </select>
+        </div>
+        <ul id="home-nav-mobile" class="header-home-section__list">
+            <li id="js-all-mobile" onclick="handleHomeList(this)" class="header-home-section__list-option selected-item-mobile">All</li>
+            <li id="js-clothes-mobile" onclick="handleHomeList(this)" class="header-home-section__list-option">Clothes</li>
+            <li id="js-electronics-mobile" onclick="handleHomeList(this)" class="header-home-section__list-option">Electronics</li>
+            <li id="js-furnitures-mobile" onclick="handleHomeList(this)" class="header-home-section__list-option">Furnitures</li>
+            <li id="js-toys-mobile" onclick="handleHomeList(this)" class="header-home-section__list-option">Toys</li>
+            <li id="js-others-mobile" onclick="handleHomeList(this)" class="header-home-section__list-option">Others</li>
+        </ul>
+    </header>
+    <div class="wrapper-home">
+        <main id="js-products-container" class="article-section"></main>
+    </div>
+</body>
+</html>

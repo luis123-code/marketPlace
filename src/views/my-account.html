@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketShop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/icon-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="../data/user.js"></script>
+    <script src="../data/products.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper-login">
+        <div class="section-up">
+            <header>
+                <nav class="header-home-nav no-fixed">
+                    <img class="menu-icon" src="../assets/icons/menu-icon.svg" alt="menu icon">
+                    <a href="./home.html"><img class="logo-icon-small" src="../assets/icons/logo.svg" alt="logo of the webpage"></a>
+                    <img class="shopping-cart" src="../assets/icons/shopping-cart.svg" alt="icon of a shopping cart">
+                </nav>
+            </header>
+            <main class="main-my-account">
+                    <h2 class="myaccount-tittle">My account</h2>
+                    <label class="login-section__label" for="name-txt">Name</label>
+                    <input class="general-input login-section__input" id="name-txt" readonly placeholder="Stiven Bautista" type="text">
+                    <label class="login-section__label" for="email-txt">Email address</label>
+                    <input class="general-input login-section__input" id="email-txt" readonly placeholder="stivenb1994@gmail.com" type="text">
+                    <label class="login-section__label" for="password-txt">Password</label>
+                    <input class="general-input login-section__input" id="password-txt" readonly placeholder="************" type="password">
+            </main>
+        </div>
+        <div class="section-down">
+            <button id="create-account-btn" onclick="editAccount(this)" class="general-button white--btn">
+                Edit
+            </button>
+        </div>
+    </div>
+</body>
+</html>
