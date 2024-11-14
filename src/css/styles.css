@@ -611,11 +611,11 @@ a.grey__message:hover, a.green__message:hover {
 }
 
 .error-message {
-    position: absolute;
+   
     color: #D25050;
     font-size: 1.1rem;
     left: calc(50% - 106.5px);
-    visibility: hidden;
+    display: none;
 }
 
 .deleted-item {
@@ -632,9 +632,9 @@ a.grey__message:hover, a.green__message:hover {
     overflow: hidden;
 }
 
-.search-home-section .close-vissible, .show-error-message, .show-section {
+/* .search-home-section .close-vissible, .show-error-message, .show-section {
     visibility: visible;
-}
+} */
 
 .right-nav {
     position: relative;
@@ -816,9 +816,9 @@ a.grey__message:hover, a.green__message:hover {
         visibility: hidden;
     }
 
-    .search-home-section .close-vissible, .show-error-message, .show-section, .menu-active {
+    /* .search-home-section .close-vissible, .show-error-message, .show-section, .menu-active {
         visibility: visible;
-    }
+    } */
 
     .menu-tab {
         transform: translateX(-100vw);
