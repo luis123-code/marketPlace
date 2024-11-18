@@ -632,9 +632,9 @@ a.grey__message:hover, a.green__message:hover {
     overflow: hidden;
 }
 
-/* .search-home-section .close-vissible, .show-error-message, .show-section {
-    visibility: visible;
-} */
+.show-section {
+    visibility: visible !important;
+}
 
 .right-nav {
     position: relative;
@@ -725,7 +725,7 @@ a.grey__message:hover, a.green__message:hover {
     }
 
     .general-button.white--btn, .general-button.green--btn {
-        margin-top: 2.5em;
+        margin-top: -0.5em;
     }
 
     .shopping-card-bottom .green--btn {

@@ -606,3 +606,4 @@ Products = [
         description: "Have fun collecting these spectacular mini figures from the new movie Minions THE RISE OF GRU, collect them all."
     }
 ];
+
